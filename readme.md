@@ -12,7 +12,7 @@ This project uses [Feathers](http://feathersjs.com). An open source framework fo
 2. Install your dependencies
 
     ```
-    cd path/to/core-api
+    cd path/to/feathersjs-dove
     npm install
     ```
 
