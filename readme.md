@@ -1,6 +1,6 @@
-# core-api
+# feathersjs-dove
 
-> Provides core api used by skysill services
+> Template for creating feathers dove apps
 
 ## About
 
