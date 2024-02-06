@@ -1,0 +1,60 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "./public/",
+  "origins": [
+    "http://localhost:3030"
+  ],
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "sqlite": {
+    "client": "sqlite3",
+    "connection": "core.sqlite",
+    "useNullAsDefault": true,
+     "seeds": {
+      "directory": "./seeds"
+    },
+    "acquireConnectionTimeout": 10000,
+    "pool": { "min": 0, "max": 7 }
+  },
+  "mysql": {
+    "client": "mysql",
+    "connection": {
+      "host" : "127.0.0.1",
+      "port" : 3306,
+      "user" : "your_database_user",
+      "password" : "your_database_password",
+      "database" : "myapp_test"
+    }
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "user",
+    "secret": "2O1MtfuActhS2UQiesP1OQt3pnfQbmXm",
+    "authStrategies": [
+      "jwt",
+      "local",
+      "login"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    },
+    "login": {
+      "emailField": "email",
+      "mobileField": "mobile",
+      "passwordField": "password",
+      "passphraseField": "passphrase"
+    }
+  }   
+}
