@@ -1,6 +1,6 @@
 {
-  "name": "skysill-api-core",
-  "description": "Provides core api used by skysill services",
+  "name": "feathersjs-dove",
+  "description": "Project template for feathersjs dove projects",
   "version": "0.5.94",
   "type": "commonjs",
   "homepage": "",
@@ -80,7 +80,6 @@
     "lodash": "^4.17.21",
     "nanoid": "^3.3.6",
     "ngeohash": "^0.6.3",
-    "shipday-ts": "github:lyricsking/shipday-ts",
     "sqlite3": "^5.1.7",
     "twilio": "^4.16.0",
     "winston": "^3.10.0"
